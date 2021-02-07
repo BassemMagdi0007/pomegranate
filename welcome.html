@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet" type="text/css" href="CSS/Welcome-CSS/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="CSS/Welcome-CSS/demo.css" />
+        <link rel="stylesheet" type="text/css" href="CSS/Welcome-CSS/component.css" />
+        <link rel="stylesheet" type="text/css" href="CSS/Welcome-CSS/welcome.css" />
+        <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800|Londrina+Outline' rel='stylesheet' type='text/css'>
+     
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+        <script src="JavaScript/Welcome-JS/welcomeText.js"></script>
+	</head>
+	<body style="margin: 0; overflow: hidden">
+
+    <audio autoplay loop id="myaudio" src="music/happyBirthday.mp3">
+      <!-- <source src="music/happyBirthday.mp3" type="audio/mpeg"/> -->
+    </audio>
+
+    <div class="fadeAnim">
+      <div class="demo-3">
+        <div class="content">
+              <div id="large-header" class="large-header">
+                  <canvas id="demo-canvas"></canvas>
+                  <!-- <h1 class="main-title">Welcome</span></h1> --> -->
+                  <section class="container">
+                      <h1>
+                        <span class="title">Welcome</span>
+                        <span class="title">January</span>
+                        <span class="title">Girl</span>
+                      </h1>
+                      
+                      <a id= "mybutton" class="button" href="game.html">Proceed</a>
+                    </section>
+              </div>
+          </div>
+      </div>
+    </div>
+        <script>
+          var audio = document.getElementById("myaudio");
+          audio.volume = 0.5;
+        </script>
+
+            <script>
+              $(document).ready(function () {
+                $('#mybutton').hide().delay(2000).fadeIn(2200);
+              });
+            </script> 
+        <script src="JavaScript/Welcome-JS/TweenLite.min.js"></script>
+        <script src="JavaScript/Welcome-JS/EasePack.min.js"></script>
+        <script src="JavaScript/Welcome-JS/rAF.js"></script>
+        <script src="JavaScript/Welcome-JS/demo-3.js"></script>
+	</body>
+</html>
